@@ -1,0 +1,70 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context=".PracticalTest01Var01MainActivity"
+    android:id="@+id/practical_test01_var01_main_activity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/linearLayout">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Phone"
+                android:id="@+id/phone"
+                android:saveEnabled="false"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:id="@+id/email"
+                android:layout_weight="0.7"
+                android:saveEnabled="false"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Instant messaging"
+                android:id="@+id/im"
+                android:saveEnabled="false"/>
+
+            <Button
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="Navigate to secondary activity"
+                android:id="@+id/button"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true" />
+
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="81dp"
+            android:id="@+id/editText"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="top|bottom"
+            android:layout_marginTop="80dp"
+            android:layout_weight="0.19"
+            android:saveEnabled="false"
+            android:editable="false"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
